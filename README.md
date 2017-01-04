@@ -24,8 +24,11 @@ This method reads the value from the current sensor and returns it.
 ### *float* **getCurrentAC(** *uint16_t* frequency **)**
 This method allows you to measure AC voltage. Current frequency is measured in Hz. Method use the Root Mean Square technique for the measurement. The measurement itself takes time of one full period (1second / frequency). RMS method allow us to measure complex signals different from the perfect sine wave.
 
-### *float* **getCurrentAC()**
+### *float* **getCurrentAC50Hz()**
 Does the same as the previous method, but frequency is equal to 50 Hz.
+
+### *float* **getCurrentAC60Hz()**
+Does the same as the previous method, but frequency is equal to 60 Hz.
 
 ### *int* **calibrate()**
 This method reads the current value of the sensor and sets it as a reference point of measurement, and then returns this value. By default, this parameter is equal to half of the maximum value on analog input - 512; however, sometimes this value may vary. It depends on the concrete sensor, power issues etc… It is better to execute this method at the beginning of each program. Note that when performing this method, no current must flow through the sensor, and since this is not always possible - there is the following method:

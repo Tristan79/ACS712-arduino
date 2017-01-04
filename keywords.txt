@@ -15,9 +15,11 @@ ACS712_type	KEYWORD1
 
 begin	KEYWORD2
 calibrate	KEYWORD2
-setSensitivity	KEYWORD2
 getCurrentDC	KEYWORD2
 getCurrentAC	KEYWORD2
+getCurrentAC50Hz	KEYWORD2
+getCurrentAC60Hz	KEYWORD2
+setZeroPoint	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

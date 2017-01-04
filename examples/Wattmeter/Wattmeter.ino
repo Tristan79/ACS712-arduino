@@ -26,7 +26,7 @@ void loop() {
 
   // To measure current we need to know the frequency of current
   // By default 50Hz is used, but you can specify own, if necessary
-  float I = sensor.getCurrentAC();
+  float I = sensor.getCurrentAC50Hz();
 
   // To calculate the power we need voltage multiplied by current
   float P = U * I;
